@@ -1,0 +1,10 @@
+1、undefined refrence getch
+    $sudo apt-get install  libncurses5-dev
+    然后编译的时候加上 -lncurses
+2、连接数据库
+    1)、编译：gcc -o db -g db.c  -I /usr/include/ -L /usr/lib/ -l mysqlclient
+    2)、编译报错：
+    $sudo apt-get install libmysqlclient-dev
+    $sudo ln -sf /usr/lib64/libmysqlclient.a /usr/lib/libmysqlclient.a
+    $sudo ln -sf /usr/lib64/libmysqlclient.so /usr/lib/libmysqlclient.so
+    $sudo ln -sf /usr/lib64/libmysqlclient_r.so /usr/lib/libmysqlclient_r.so
